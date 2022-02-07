@@ -45,149 +45,139 @@ class _MyHomePageState extends State<MyHomePage> {
         // Center is a layout widget. It takes a single child and positions it
         // in the middle of the parent.
         child: Row(
-          mainAxisAlignment: MainAxisAlignment.center,
+          mainAxisAlignment: MainAxisAlignment.start,
           crossAxisAlignment: CrossAxisAlignment.start,
           children: <Widget>[
-            Flexible(
+            Expanded(
               flex: 1,
               child: Container(
                 color: const Color(0xFF0779E4), // 0779E4
-                child: Align(
-                  alignment: Alignment.bottomCenter,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    children: <Widget>[
-                      const SizedBox(height: 150),
-                      OnHoverButton(
-                        builder: (isHovered) {
-                          final color =
-                              (isHovered) ? Colors.amber : Colors.white;
-                          return OutlinedButton(
-                            child: Text(
-                              "General",
-                              style: TextStyle(fontSize: 30, color: color),
-                            ),
-                            onPressed: () {},
-                            // onHover: ,
-                            style: OutlinedButton.styleFrom(
-                              padding: const EdgeInsets.all(12),
-                              side: const BorderSide(
-                                  width: 3.0, color: Color(0xff0B0C10)),
-                            ),
-                          );
-                        },
-                      ),
-                      const SizedBox(height: 40),
-                      OnHoverButton(
-                        builder: (isHovered) {
-                          final color =
-                              (isHovered) ? Colors.amber : Colors.white;
-                          return OutlinedButton(
-                            child: Text(
-                              "Inventory Tracker",
-                              style: TextStyle(fontSize: 20, color: color),
-                            ),
-                            onPressed: () {},
-                            style: OutlinedButton.styleFrom(
-                              padding: const EdgeInsets.all(12),
-                              side: const BorderSide(
-                                  width: 3.0, color: Color(0xff0B0C10)),
-                            ),
-                          );
-                        },
-                      ),
-                      const SizedBox(height: 40),
-                      OnHoverButton(
-                        builder: (isHovered) {
-                          final color =
-                              (isHovered) ? Colors.amber : Colors.white;
-                          return OutlinedButton(
-                            child: Text(
-                              "Weather app",
-                              style: TextStyle(fontSize: 20, color: color),
-                            ),
-                            onPressed: () {},
-                            style: OutlinedButton.styleFrom(
-                              padding: const EdgeInsets.all(12),
-                              side: const BorderSide(
-                                  width: 3.0, color: Color(0xff0B0C10)),
-                            ),
-                          );
-                        },
-                      ),
-                      const SizedBox(height: 40),
-                      OnHoverButton(
-                        builder: (isHovered) {
-                          final color =
-                              (isHovered) ? Colors.amber : Colors.white;
-                          return OutlinedButton(
-                            child: Text(
-                              "Contact Manager",
-                              style: TextStyle(fontSize: 20, color: color),
-                            ),
-                            onPressed: () {},
-                            style: OutlinedButton.styleFrom(
-                              padding: const EdgeInsets.all(12),
-                              side: const BorderSide(
-                                  width: 3.0, color: Color(0xff0B0C10)),
-                            ),
-                          );
-                        },
-                      ),
-                      const Spacer(),
-                    ],
-                  ),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  children: <Widget>[
+                    const SizedBox(height: 150),
+                    OnHoverButton(
+                      builder: (isHovered) {
+                        final color = (isHovered) ? Colors.amber : Colors.white;
+                        return OutlinedButton(
+                          child: Text(
+                            "General",
+                            style: TextStyle(fontSize: 30, color: color),
+                          ),
+                          onPressed: () {},
+                          // onHover: ,
+                          style: OutlinedButton.styleFrom(
+                            padding: const EdgeInsets.all(12),
+                            side: const BorderSide(
+                                width: 3.0, color: Color(0xff0B0C10)),
+                          ),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 40),
+                    OnHoverButton(
+                      builder: (isHovered) {
+                        final color = (isHovered) ? Colors.amber : Colors.white;
+                        return OutlinedButton(
+                          child: Text(
+                            "Inventory Tracker",
+                            style: TextStyle(fontSize: 20, color: color),
+                          ),
+                          onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                            padding: const EdgeInsets.all(12),
+                            side: const BorderSide(
+                                width: 3.0, color: Color(0xff0B0C10)),
+                          ),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 40),
+                    OnHoverButton(
+                      builder: (isHovered) {
+                        final color = (isHovered) ? Colors.amber : Colors.white;
+                        return OutlinedButton(
+                          child: Text(
+                            "Weather app",
+                            style: TextStyle(fontSize: 20, color: color),
+                          ),
+                          onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                            padding: const EdgeInsets.all(12),
+                            side: const BorderSide(
+                                width: 3.0, color: Color(0xff0B0C10)),
+                          ),
+                        );
+                      },
+                    ),
+                    const SizedBox(height: 40),
+                    OnHoverButton(
+                      builder: (isHovered) {
+                        final color = (isHovered) ? Colors.amber : Colors.white;
+                        return OutlinedButton(
+                          child: Text(
+                            "Contact Manager",
+                            style: TextStyle(fontSize: 20, color: color),
+                          ),
+                          onPressed: () {},
+                          style: OutlinedButton.styleFrom(
+                            padding: const EdgeInsets.all(12),
+                            side: const BorderSide(
+                                width: 3.0, color: Color(0xff0B0C10)),
+                          ),
+                        );
+                      },
+                    ),
+                    const Spacer(),
+                  ],
                 ),
               ),
             ),
-            Flexible(
+            Expanded(
               flex: 4,
               child: SingleChildScrollView(
-                child: Align(
-                  alignment: Alignment.topCenter,
-                  child: Column(
-                    mainAxisAlignment: MainAxisAlignment.start,
-                    crossAxisAlignment: CrossAxisAlignment.start,
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white)),
-                        padding: const EdgeInsets.only(left: 200, top: 30),
-                        child: const SelectableText(
-                          "Hello, I'm \nMohammad Abdulwahhab",
-                          textAlign: TextAlign.center,
-                          style: TextStyle(
-                              color: const Color(0xff0779E4), fontSize: 50),
+                child: Column(
+                  mainAxisAlignment: MainAxisAlignment.start,
+                  crossAxisAlignment: CrossAxisAlignment.start,
+                  children: [
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white)),
+                      child: const SelectableText(
+                        "Hello, I'm \nMohammad Abdulwahhab",
+                        textAlign: TextAlign.center,
+                        style: TextStyle(
+                            color: const Color(0xff0779E4), fontSize: 50),
+                      ),
+                    ),
+                    Container(
+                      // alignment: Alignment.left,
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white)),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 10, horizontal: 50),
+                      child: const SelectableText.rich(
+                        TextSpan(
+                          text: 'About me:\n',
+                          style:
+                              TextStyle(color: Color(0xff323232), fontSize: 30),
                         ),
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white)),
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 10, horizontal: 50),
-                        child: const SelectableText.rich(
-                          TextSpan(
-                            text: 'About me:\n',
-                            style: TextStyle(
-                                color: Color(0xff323232), fontSize: 30),
-                          ),
+                    ),
+                    Container(
+                      decoration: BoxDecoration(
+                          border: Border.all(color: Colors.white)),
+                      padding: const EdgeInsets.symmetric(
+                          vertical: 100, horizontal: 50),
+                      child: const SelectableText.rich(
+                        TextSpan(
+                          text: 'Mohammad Abdulwahhab',
+                          style:
+                              TextStyle(color: Color(0xff0779E4), fontSize: 30),
                         ),
                       ),
-                      Container(
-                        decoration: BoxDecoration(
-                            border: Border.all(color: Colors.white)),
-                        padding: const EdgeInsets.symmetric(
-                            vertical: 100, horizontal: 50),
-                        child: const SelectableText.rich(
-                          TextSpan(
-                            text: 'Mohammad Abdulwahhab',
-                            style: TextStyle(
-                                color: Color(0xff0779E4), fontSize: 30),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+                    ),
+                  ],
                 ),
               ),
             ),
