@@ -61,7 +61,7 @@ class _mainSpaceState extends State<mainSpace> {
           ),
           Container(
             // decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-            padding: const EdgeInsets.symmetric(vertical: 10, horizontal: 50),
+            padding: const EdgeInsets.only(top: 20, left: 50),
             child: const SelectableText.rich(
               TextSpan(
                 text: '| Software Developer and Computer Science major'
@@ -71,12 +71,92 @@ class _mainSpaceState extends State<mainSpace> {
             ),
           ),
           Container(
-            decoration: BoxDecoration(border: Border.all(color: Colors.white)),
-            padding: const EdgeInsets.symmetric(vertical: 100, horizontal: 50),
-            child: const SelectableText.rich(
-              TextSpan(
-                text: 'Mohammad Abdulwahhab',
-                style: TextStyle(color: Color(0xff0779E4), fontSize: 30),
+            padding: const EdgeInsets.only(top: 15, left: 50),
+            child: const Expanded(
+              child: SelectableText.rich(
+                TextSpan(
+                  text: 'About me',
+                  style: TextStyle(color: Color(0xff0779E4), fontSize: 24),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.only(top: 10, left: 50),
+            child: const Expanded(
+              child: SelectableText.rich(
+                TextSpan(
+                  text:
+                      'Ambitious and motivated student with a passion for learning and a strong work ethic. Experienced in programming and web development. I seek to help create a better future for our world through computer science and engineering.',
+                  style: TextStyle(color: Color(0xff323232), fontSize: 18),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.only(top: 15, left: 50),
+            child: const Expanded(
+              child: SelectableText.rich(
+                TextSpan(
+                  text: 'Experience',
+                  style: TextStyle(color: Color(0xff0779E4), fontSize: 24),
+                ),
+              ),
+            ),
+          ),
+          Container(
+            padding: const EdgeInsets.only(top: 10, left: 80),
+            child: Container(
+              padding: EdgeInsets.only(top: 20),
+              child: Wrap(
+                spacing: 40,
+                children: [
+                  Column(
+                    children: [
+                      Container(
+                        // padding: const EdgeInsets.only(top: 10, left: 80),
+                        child: SelectableText.rich(
+                          TextSpan(
+                            text: 'Limbitless solutions internship',
+                            style: TextStyle(
+                                color: Color(0xff51a1ec), fontSize: 20),
+                          ),
+                        ),
+                      ),
+                      SelectableText.rich(
+                        TextSpan(
+                          text:
+                              'Used Flutter and Dart to develop software in a team work environment',
+                          style:
+                              TextStyle(color: Color(0xff323232), fontSize: 10),
+                        ),
+                      ),
+                    ],
+                  ),
+                  Column(
+                    children: [
+                      Container(
+                        // padding: const EdgeInsets.only(top: 10, left: 80),
+                        child: SelectableText.rich(
+                          TextSpan(
+                            text:
+                                'Limbitless solutions Computer Science internship',
+                            style: TextStyle(
+                                color: Color(0xff51a1ec), fontSize: 20),
+                          ),
+                        ),
+                      ),
+                      SelectableText.rich(
+                        TextSpan(
+                          text:
+                              'Used Flutter and Dart to develop software in a team work environment',
+                          style:
+                              TextStyle(color: Color(0xff323232), fontSize: 10),
+                        ),
+                      ),
+                    ],
+                  ),
+                ],
               ),
             ),
           ),
