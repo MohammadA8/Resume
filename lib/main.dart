@@ -146,36 +146,30 @@ class _MyHomePageState extends State<MyHomePage> {
                 child: Align(
                   alignment: Alignment.topCenter,
                   child: Column(
+                    mainAxisAlignment: MainAxisAlignment.start,
+                    crossAxisAlignment: CrossAxisAlignment.start,
                     children: [
-                      SizedBox(
-                        height: 300,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white)),
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 10, horizontal: 50),
-                          child: const SelectableText(
-                            "Hello, I'm \nMohammad Abdulwahhab",
-                            textAlign: TextAlign.center,
-                            style: TextStyle(
-                                color: const Color(0xfff8F8F80), fontSize: 50),
-                          ),
+                      Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white)),
+                        padding: const EdgeInsets.only(left: 200, top: 30),
+                        child: const SelectableText(
+                          "Hello, I'm \nMohammad Abdulwahhab",
+                          textAlign: TextAlign.center,
+                          style: TextStyle(
+                              color: const Color(0xff0779E4), fontSize: 50),
                         ),
                       ),
-                      const SizedBox(height: 40),
-                      Align(
-                        alignment: Alignment.centerLeft,
-                        child: Container(
-                          decoration: BoxDecoration(
-                              border: Border.all(color: Colors.white)),
-                          padding: const EdgeInsets.symmetric(
-                              vertical: 10, horizontal: 50),
-                          child: const SelectableText.rich(
-                            TextSpan(
-                              text: 'About me:\n',
-                              style: TextStyle(
-                                  color: Color(0xff323232), fontSize: 30),
-                            ),
+                      Container(
+                        decoration: BoxDecoration(
+                            border: Border.all(color: Colors.white)),
+                        padding: const EdgeInsets.symmetric(
+                            vertical: 10, horizontal: 50),
+                        child: const SelectableText.rich(
+                          TextSpan(
+                            text: 'About me:\n',
+                            style: TextStyle(
+                                color: Color(0xff323232), fontSize: 30),
                           ),
                         ),
                       ),
