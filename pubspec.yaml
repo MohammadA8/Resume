@@ -55,7 +55,11 @@ dev_dependencies:
 flutter:
 
   
-  
+
+  fonts:
+    - family:  MyFlutterApp
+      fonts:
+       - asset: lib/assets/MyFlutterApp.ttf
   
   uses-material-design: true
 

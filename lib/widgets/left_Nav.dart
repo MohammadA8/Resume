@@ -2,16 +2,20 @@ import 'dart:html';
 
 import 'package:flutter/gestures.dart';
 import 'package:real_resume/widgets/on_hover_button.dart';
+import 'package:real_resume/widgets/main_space.dart';
 import 'package:flutter/material.dart';
 
 class leftNav extends StatefulWidget {
   const leftNav({Key? key}) : super(key: key);
 
   @override
+  // ignore: no_logic_in_create_state
   State<leftNav> createState() => _leftNavState();
 }
 
 class _leftNavState extends State<leftNav> {
+  _leftNavState() : super();
+
   @override
   Widget build(BuildContext context) {
     return Container(
@@ -32,7 +36,7 @@ class _leftNavState extends State<leftNav> {
                 // onHover: ,
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.all(12),
-                  side: const BorderSide(width: 3.0, color: Color(0xff0B0C10)),
+                  side: const BorderSide(width: 2.0, color: Color(0xffF8F8F8)),
                 ),
               );
             },
@@ -49,7 +53,7 @@ class _leftNavState extends State<leftNav> {
                 onPressed: () {},
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.all(12),
-                  side: const BorderSide(width: 3.0, color: Color(0xff0B0C10)),
+                  side: const BorderSide(width: 2.0, color: Color(0xffF8F8F8)),
                 ),
               );
             },
@@ -66,7 +70,7 @@ class _leftNavState extends State<leftNav> {
                 onPressed: () {},
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.all(12),
-                  side: const BorderSide(width: 3.0, color: Color(0xff0B0C10)),
+                  side: const BorderSide(width: 2.0, color: Color(0xffF8F8F8)),
                 ),
               );
             },
@@ -80,10 +84,12 @@ class _leftNavState extends State<leftNav> {
                   "Contact Manager",
                   style: TextStyle(fontSize: 20, color: color),
                 ),
-                onPressed: () {},
+                onPressed: () {
+                  ;
+                },
                 style: OutlinedButton.styleFrom(
                   padding: const EdgeInsets.all(12),
-                  side: const BorderSide(width: 3.0, color: Color(0xff0B0C10)),
+                  side: const BorderSide(width: 2.0, color: Color(0xffF8F8F8)),
                 ),
               );
             },
