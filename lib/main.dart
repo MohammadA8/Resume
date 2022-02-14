@@ -279,13 +279,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         Container(
-                          padding: const EdgeInsets.only(top: 15, left: 50),
+                          padding: const EdgeInsets.only(top: 15, left: 70),
                           child: SelectableText.rich(
                             TextSpan(
                               text:
                                   'Used Flutter and Dart to develop software in a team work environment',
                               style: TextStyle(
-                                  color: Color(0xff323232), fontSize: 10),
+                                  color: Color(0xff323232), fontSize: 15),
                             ),
                           ),
                         ),
@@ -300,13 +300,13 @@ class _MyHomePageState extends State<MyHomePage> {
                           ),
                         ),
                         Container(
-                          padding: const EdgeInsets.only(top: 15, left: 50),
+                          padding: const EdgeInsets.only(top: 15, left: 70),
                           child: SelectableText.rich(
                             TextSpan(
                               text:
                                   'Help student learn important data structures and algrothims',
                               style: TextStyle(
-                                  color: Color(0xff323232), fontSize: 10),
+                                  color: Color(0xff323232), fontSize: 15),
                             ),
                           ),
                         ),
@@ -323,13 +323,13 @@ class _MyHomePageState extends State<MyHomePage> {
                       ),
                     ),
                     Container(
-                      padding: const EdgeInsets.only(top: 15, left: 50),
+                      padding: const EdgeInsets.only(top: 15, left: 70),
                       child: SelectableText.rich(
                         TextSpan(
                           text:
                               'Assisted the physician in seeing the patients and recorded important details regarding the visit',
                           style:
-                              TextStyle(color: Color(0xff323232), fontSize: 10),
+                              TextStyle(color: Color(0xff323232), fontSize: 15),
                         ),
                       ),
                     ),
@@ -346,61 +346,45 @@ class _MyHomePageState extends State<MyHomePage> {
                         ),
                       ),
                     ),
-                    const SizedBox(height: 20),
-                    Center(
-                      child: Container(
-                        padding: const EdgeInsets.only(
-                          top: 20,
+                    Container(
+                      padding: const EdgeInsets.only(top: 15, left: 50),
+                      child: SelectableText.rich(
+                        TextSpan(
+                          text: 'IT director at MSA',
+                          style:
+                              TextStyle(color: Color(0xff323232), fontSize: 20),
                         ),
-                        child: Wrap(
-                          spacing: 40,
-                          children: [
-                            Column(
-                              children: const [
-                                SelectableText.rich(
-                                  TextSpan(
-                                    text: 'IT director at MSA',
-                                    style: TextStyle(
-                                        color: Color(0xff51a1ec), fontSize: 20),
-                                  ),
-                                ),
-                                SelectableText.rich(
-                                  TextSpan(
-                                    text:
-                                        'Helped run the Muslim Student Association by providing solutions to technical problems',
-                                    style: TextStyle(
-                                        color: Color(0xff323232), fontSize: 10),
-                                  ),
-                                ),
-                              ],
-                            ),
-                            Column(
-                              children: [
-                                const SelectableText.rich(
-                                  TextSpan(
-                                    text:
-                                        'Communications director at Project Downtown',
-                                    style: TextStyle(
-                                        color: Color(0xff51a1ec), fontSize: 20),
-                                  ),
-                                  textAlign: TextAlign.center,
-                                ),
-                                Container(
-                                  width: 400,
-                                  child: const SelectableText.rich(
-                                    TextSpan(
-                                      text:
-                                          'Mainted the website and lead weekly meal packing services to feed the unhoused population of downtown Orlando',
-                                      style: TextStyle(
-                                          color: Color(0xff323232),
-                                          fontSize: 10),
-                                    ),
-                                    textAlign: TextAlign.center,
-                                  ),
-                                ),
-                              ],
-                            ),
-                          ],
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 15, left: 70),
+                      child: SelectableText.rich(
+                        TextSpan(
+                          text:
+                              'Helped run the Muslim Student Association by providing solutions to technical problems',
+                          style:
+                              TextStyle(color: Color(0xff323232), fontSize: 15),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 15, left: 50),
+                      child: SelectableText.rich(
+                        TextSpan(
+                          text: 'Communications director at Project Downtown',
+                          style:
+                              TextStyle(color: Color(0xff323232), fontSize: 20),
+                        ),
+                      ),
+                    ),
+                    Container(
+                      padding: const EdgeInsets.only(top: 15, left: 70),
+                      child: SelectableText.rich(
+                        TextSpan(
+                          text:
+                              'Mainted the website and lead weekly meal packing services to feed the unhoused population of downtown Orlando',
+                          style:
+                              TextStyle(color: Color(0xff323232), fontSize: 15),
                         ),
                       ),
                     ),
