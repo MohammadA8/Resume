@@ -32,7 +32,6 @@ class MyHomePage extends StatefulWidget {
 
 class _MyHomePageState extends State<MyHomePage> {
   int _counter = 0;
-  String url = "https://media.giphy.com/media/1xQkQnp3yXOmwUtwVZ/giphy.gif";
 
   void _evictImage(String url) {
     final NetworkImage provider = NetworkImage(url);
@@ -554,7 +553,8 @@ class _MyHomePageState extends State<MyHomePage> {
                         Container(
                             margin: const EdgeInsets.only(right: 30),
                             padding: const EdgeInsets.only(top: 15, left: 40),
-                            child: Image.network(url)),
+                            child: Image.network(
+                                "https://media.giphy.com/media/1xQkQnp3yXOmwUtwVZ/giphy.gif")),
                       ],
                     ),
                     const SizedBox(height: 140),
